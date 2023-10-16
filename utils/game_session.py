@@ -13,11 +13,16 @@ def get_list_players() -> list:
             'Ювента',
             'СОБР']
 
+class ActiveRoles(NamedTuple):
+    sheriff: int = None
+    don: int = None
+    mafia: set = None
 
 class GameSession(NamedTuple):
     players: list
-    roles: list = None
+    active_roles: ActiveRoles = ActiveRoles()
     best_move: list = None
     days: list = None
     nights: list = None
+
 
