@@ -1,3 +1,4 @@
+from dataclasses import dataclass
 from typing import NamedTuple
 
 
@@ -12,17 +13,18 @@ def get_list_players() -> list:
             'Киндер',
             'Ювента',
             'СОБР']
-
+@dataclass
 class ActiveRoles(NamedTuple):
     sheriff: int = None
     don: int = None
     mafia: set = None
 
-class GameSession(NamedTuple):
+
+
+@dataclass
+class GameSession:
     players: list
     active_roles: ActiveRoles = ActiveRoles()
     best_move: list = None
     days: list = None
     nights: list = None
-
-
