@@ -6,9 +6,9 @@ from bot.keyboards.game_session import set_role, choose_player, nomination
 from bot.utils.states import OrderGame
 from bot.utils.CustomCallBack import RoleCallback
 
+
+
 router = Router()
-
-
 @router.message(F.text.lower() == "а")
 async def create_game(message: Message, state: FSMContext):
     await message.answer(
