@@ -16,17 +16,17 @@ def main_menu() -> ReplyKeyboardMarkup:
 
 def nomination() -> InlineKeyboardMarkup:
     kb = InlineKeyboardBuilder()
-    player_1 = InlineKeyboardButton(text='1️⃣', callback_data='player1')
-    player_2 = InlineKeyboardButton(text='2⃣', callback_data='player2')
-    player_3 = InlineKeyboardButton(text='3⃣', callback_data='player3')
-    player_4 = InlineKeyboardButton(text='4⃣', callback_data='player4')
-    player_5 = InlineKeyboardButton(text='5⃣', callback_data='player5')
-    player_6 = InlineKeyboardButton(text='6⃣', callback_data='player6')
-    player_7 = InlineKeyboardButton(text='7⃣', callback_data='player7')
-    player_8 = InlineKeyboardButton(text='8⃣', callback_data='player8')
-    player_9 = InlineKeyboardButton(text='9⃣', callback_data='player9')
+    player_1 = InlineKeyboardButton(text='1️', callback_data='player1')
+    player_2 = InlineKeyboardButton(text='2', callback_data='player2')
+    player_3 = InlineKeyboardButton(text='3', callback_data='player3')
+    player_4 = InlineKeyboardButton(text='4', callback_data='player4')
+    player_5 = InlineKeyboardButton(text='5', callback_data='player5')
+    player_6 = InlineKeyboardButton(text='6', callback_data='player6')
+    player_7 = InlineKeyboardButton(text='7', callback_data='player7')
+    player_8 = InlineKeyboardButton(text='8', callback_data='player8')
+    player_9 = InlineKeyboardButton(text='9', callback_data='player9')
     fouls = InlineKeyboardButton(text='⚠️', callback_data='fouls')
-    player_10 = InlineKeyboardButton(text='1⃣0⃣', callback_data='player10')
+    player_10 = InlineKeyboardButton(text='10', callback_data='player10')
     next_state = InlineKeyboardButton(text='❎', callback_data='next')
     kb.add(player_1, player_2, player_3,
            player_4, player_5, player_6,
